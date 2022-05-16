@@ -43,7 +43,7 @@ except URLError as e:
     
 #s#treamlit.text(fruityvice_response.json())
 # Dont run anything psdt here while we troubleshoot
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header("THE FRUIT LOAD LIST COMTAINS:")
 # Snowflake functions related 
