@@ -43,8 +43,8 @@ streamlit.text("Tre Fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 #Second text box
-add_my_fruit = streamlit.text_input('What fruit would you like information about?', 'banana')
-streamlit.write('The user entered INTO NEW', fruit_choice1)
+add_my_fruit = streamlit.text_input('What fruit would you like ADD ', 'banana')
+streamlit.write('The user entered INTO NEW', add_my_fruit)
 
 #streamlit.write('THANKS FOR ADDING ', add_my_fruit)
 #my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
