@@ -26,10 +26,6 @@ streamlit.header('Fruiyvice Fruit Advice')
 fruit_choice = streamlit.text_input('What fruit would you like information about?', 'kiwi')
 streamlit.write('The user entered', fruit_choice)
 
-#Second text box
-fruit_choice1 = streamlit.text_input('What fruit would you like information about?', 'banana')
-streamlit.write('The user entered INTO NEW', fruit_choice1)
-
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 #streamlit.text(fruityvice_response.json())
@@ -46,8 +42,12 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("Tre Fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-streamlit.write('THANKS FOR ADDING ', add_my_fruit)
-my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
+#Second text box
+add_my_fruit = streamlit.text_input('What fruit would you like information about?', 'banana')
+streamlit.write('The user entered INTO NEW', fruit_choice1)
+
+#streamlit.write('THANKS FOR ADDING ', add_my_fruit)
+#my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
 
 
 
