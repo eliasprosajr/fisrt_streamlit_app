@@ -46,7 +46,7 @@ my_data_rows = my_cur.fetchall()
 streamlit.text("Tre Fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
-streamlit.write('Thanks for adding ' , add_my_fruit)
+streamlit.write('THANKS FOR ADDING ', add_my_fruit)
 my_cur.execute("Insert into fruit_load_list values ('from streamlit')")
 
 
